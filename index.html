@@ -18,6 +18,59 @@
 </head>
 
 <body>
+
+    <!-- Page Heading. full width -->
+    <div class="jumbotron jumbotron-fluid" id="green">
+        <div class="text-center">
+            <h1 class="align-bottom">Vacation Destinations WishList</h1>
+            <p class="align-top">Found exciting places to visit on your next vacation? Use the form below to add them to your wishlist</p>
+        </div>
+    </div>
+    
+    <!-- Input and Wish List. row -->
+    <div class="row">
+        
+        <!-- Input -->
+        <div class="col-md-3" id="red">
+            <!-- Form -->
+            <form>
+                <div class="form-group">
+                    <label for="destination">Destination name</label>
+                    <input required="" minlength="2" type="text" class="form-control" id="name" placeholder="Enter the name of the destination">
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input required="" minlength="2" type="text" class="form-control" id="location" placeholder="Where is it located?">
+                </div>
+                <div class="form-group">
+                    <label for="photo">Photo</label>
+                    <input type="url" class="form-control" id="photo" placeholder="Enter an image url of the place">
+                </div>
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea type="text" class="form-control" id="description" placeholder="Where is it located?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary submit_btn">Add to list</button>
+            </form>
+        </div>
+
+        <!-- Output -->
+        <div class="col-md-3" id="blue">
+            <div id="purple">
+                <h4 id="title">Enter destination details</h4>
+            </div>
+            <div id="yellow">
+                <p></p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
     </script>

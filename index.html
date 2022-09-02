@@ -12,18 +12,30 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"/>
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
     <!-- Personal CSS -->
     <link rel="stylesheet" href="./style.css"/>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Import Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Oswald:wght@200&family=Permanent+Marker&family=Silkscreen&display=swap&family=Special+Elite" rel="stylesheet">
+
             
 </head>
 
 <body>
 
     <!-- Page Heading. full width -->
-    <div class="jumbotron jumbotron-fluid" id="green">
-        <div class="text-center">
-            <h1 class="align-bottom">Vacation Destinations WishList</h1>
-            <p class="align-top">Found exciting places to visit on your next vacation? Use the form below to add them to your wishlist</p>
+    <div class="jumbotron jumbotron-fluid" id="page-title-div">
+        <div id="page-title" class="text-center">
+            <h1 class="align-bottom">Vacation Destination Wish List</h1>
+            <p class="align-top">Create a list of exciting places to visit! </p>
         </div>
     </div>
     
@@ -31,36 +43,41 @@
     <div class="row">
         
         <!-- Input -->
-        <div class="col-md-3" id="red">
+        <div class="col-md-3" id="form-container">
+            <div id="column-title-box">
+                <h4 id="input-title">Enter Destination Details</h4>
+            </div>
             <!-- Form -->
-            <form>
+            <form id="input-form" onsubmit="return false;">
                 <div class="form-group">
                     <label for="destination">Destination name</label>
-                    <input required="" minlength="2" type="text" class="form-control" id="name" placeholder="Enter the name of the destination">
+                    <input required="" minlength="2" type="text" class="form-control" id="name" placeholder="Enter the destination name">
                 </div>
                 <div class="form-group">
                     <label for="location">Location</label>
-                    <input required="" minlength="2" type="text" class="form-control" id="location" placeholder="Where is it located?">
+                    <input required="" minlength="2" type="text" class="form-control" id="location" placeholder="Enter location">
                 </div>
                 <div class="form-group">
                     <label for="photo">Photo</label>
-                    <input type="url" class="form-control" id="photo" placeholder="Enter an image url of the place">
+                    <input type="url" class="form-control" id="photo" placeholder="Enter an image url">
                 </div>
                 <div class="form-group">
                     <label for="description">Description</label>
-                    <textarea type="text" class="form-control" id="description" placeholder="Where is it located?"></textarea>
+                    <textarea type="text" class="form-control" id="description" placeholder="Enter description"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary submit_btn">Add to list</button>
+                <div id = "button-block">
+                <button type="submit" class="btn btn-block btn-primary submit_btn"><i class="fa fa-plus" aria-hidden="true"></i> Add to List</button>
+                </div>
             </form>
         </div>
 
         <!-- Output -->
-        <div class="col-md-3" id="blue">
-            <div id="purple">
-                <h4 id="title">Enter destination details</h4>
+        <div class="col-md-3" id="list-container">
+            <div id="column-title-box">
+                <h4 id="title">Lets Make a List!</h4>
             </div>
-            <div id="yellow">
-                <p></p>
+            <div id="list">
+                <!--JS-->
             </div>
 
         </div>
@@ -73,6 +90,10 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+
+    <!-- Personal JS -->
+    <script src="./script.js">
     </script>
 
 </body>

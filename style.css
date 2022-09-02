@@ -1,6 +1,17 @@
-#green{
-    border: 5px solid greenyellow;
-    background-color:gainsboro;
+body {
+    background-image: url("https://images.unsplash.com/photo-1473163928189-364b2c4e1135?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat repeat;
+    height: 100vh;
+    width: 100vw;
+    font-family: "Special Elite";
+  }
+#page-title{
+    color:#faf1f1;
+}
+#page-title-div{
+    backdrop-filter: brightness(90%) drop-shadow(6px 4px 40px black) blur(5px);
     min-height: 150px;
     padding: 15px;
 }
@@ -10,36 +21,80 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:space-evenly;
-    align-items: center;
+    align-items: start;
     gap: 16px;
     margin: 0 auto;
     max-width: 1800px;
     padding: 20px 10px;
 }
 
-#red{
-    border: 5px solid red;
+#form-container{
+    
+    backdrop-filter: brightness(125%) drop-shadow(4px 4px 10px black) blur(10px);
+    border-radius: 25px;
     min-width: 40%;
     min-height: 600px;
-    padding: 20px 70px;
+    padding: 20px 15px;
 
 }
 
-#blue{
-    border: 5px solid blue;
+.btn-block{
+    min-width: 70%;
+    color: azure;
+}
+
+#list-container{
     min-width: 40%;
     min-height: 600px;
     padding: 15px;
 }
 
-#purple{
-    border: 5px solid purple;
+#list-container-new{
+    backdrop-filter: brightness(125%) drop-shadow(4px 4px 10px black) blur(10px);
+    border-radius: 25px;
+    min-width: 40%;
+    min-height: 600px;
     padding: 15px;
 }
 
-#yellow{
-    border: 5px solid yellow;
+#column-title-box{
+    border: 8px solid #ddd5d5;
+    background-color: #ddd5d5;
+    box-shadow:  22px 22px 43px #c0b9b9,
+    -22px -22px 43px #faf1f1,
+        inset 22px 22px 43px #c0b9b9,
+        inset -22px -22px 43px #faf1f1;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+h1{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+h4, h1 {
+    font-family: "Permanent Marker", sans-serif;
+}
+
+#list{
+    background-color:initial;
+    border: 5px;
     margin-top: 10px;
     padding: 15px;
     min-height: 400px;
+}
+
+#button-block{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding: 15px;
+}
+
+.form-group{
+    padding: 15px;
 }
